@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Survey Form</title>
+        <link href="./form.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <form id="survey-form">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <div id="first_question">
+                <p id="name-label" class="left">· Name: </p>
+                <input type="text" class="data" placeholder=" Enter your name" required>
+                <p id="email-label" class="left">· Email: </p>
+                <input type="email" class="data" placeholder=" Enter your Email" required>
+                <p id="number-label" class="left">· Age: </p>
+                <input type="number" class="data" placeholder=" Age" required>
+            </div>
+            <div id="second_question">
+                <p id="question">Which option best describes your current role?</p>
+                <div id="dropdown">
+                    <select id="box">
+                        <option id="disabled" disabled value>Select an option</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="third_question">
+                <p id="likely">How likely is that you would recommend freeCodeCamp to a friend?</p>
+                <div id="radio_answer">
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="radio-buttons" class="recommend" value="definitely">
+                        Definitely</label>
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="radio-buttons" class="recommend" value="maybe">
+                        Maybe</label>
+                    <label for="radio3">
+                        <input type="radio" id="radio3" name="radio-buttons" class="recommend" value="notSure">
+                        Not sure</label>
+                </div>
+            </div>
+            <div id="fourth_question">
+                <p id="fcc">What do you like most in FCC:</p>
+                    <select id="second_dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select> 
+            </div>
+            <div id="fifth_question">
+                <p id="things">Things that should be improved in the future (Check all that apply):</p>
+                <div id="option">   
+                    <input type="checkbox" id="front" value="frontend">
+                    <label for="front">Front-end Projects</label><br>
+                
+                    <input type="checkbox" id="back" value="backend">
+                    <label for="back">Back-end Projects</label><br>
+
+                    <input type="checkbox" id="data" value="datavisual">
+                    <label for="data">Data Visualization</label><br>
+
+                    <input type="checkbox" id="challenges" value="challenges">
+                    <label for="challenges">Challenges</label><br>
+
+                    <input type="checkbox" id="open" value="opensource">
+                    <label for="open">Open Source Community</label><br>
+
+                    <input type="checkbox" id="gitter" value="gitterhelp">
+                    <label for="gitter">Gitter help rooms</label><br>
+
+                    <input type="checkbox" id="videos" value="videos">
+                    <label for="videos">Videos</label><br>
+
+                    <input type="checkbox" id="city" value="meetups">
+                    <label for="city">City Meetups</label><br>
+
+                    <input type="checkbox" id="wiki" value="wiki">
+                    <label for="wiki">Wiki</label><br>
+
+                    <input type="checkbox" id="forum" value="forum">
+                    <label for="forum">Forum</label><br>
+
+                    <input type="checkbox" id="courses" value="courses">
+                    <label for="courses">Additional Courses</label><br>
+                </div>
+            </div>
+            <div id="sixth_question">
+                <p id="suggestions">Any Comments or Suggestions?</p>
+                <textarea id="comment" placeholder=" Enter your comment here..."></textarea>
+            </div>
+            <div id="submit">
+                <button type="submit" id="button">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
